@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    {% for file, preview_head, doc in files %}
+    <li><a href="../files/{{ file }}">{{ file }}</a></li>
+    <b> {{preview_head}} </b>
+    <br>
+    {{doc}}
+    <br>
+    {% endfor %}
+</ul>
+</body>
+</html>
